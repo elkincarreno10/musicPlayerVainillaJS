@@ -12,7 +12,7 @@ const cover = document.querySelector("#cover");
 const songs = ["hey", "summer", "ukulele"];
 
 // Keep track of songs
-let songIndex = 0;
+let songIndex = 1;
 
 // Initially load song ingo DOM
 loadSong(songs[songIndex]);
@@ -55,7 +55,7 @@ function prevSong() {
 function nextSong() {
   songIndex++;
 
-  if (songIndex > songs.lenght - 1) {
+  if (songIndex > songs.length - 1) {
     songIndex = 0;
   }
 
