@@ -111,6 +111,7 @@ body {
     opacity: 0;
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
 }
 
 .music-info h4 {
@@ -127,6 +128,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
+    height: 4px;
     width: 100%;
 }
 
@@ -136,4 +138,10 @@ body {
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+    /* animation: progress-animation 5s forwards; */
 }
+
+/* @keyframes progress-animation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+} */
